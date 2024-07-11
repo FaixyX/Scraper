@@ -1,0 +1,5 @@
+2024/07/11-11:48:33.405 4 Creating DB /home/muhammad/Documents/BuitemsFYP/scrap_pod/user_data_dirs/7/user_data/Default/Local Storage/leveldb since it was missing.
+2024/07/11-11:48:33.442 4 Reusing MANIFEST /home/muhammad/Documents/BuitemsFYP/scrap_pod/user_data_dirs/7/user_data/Default/Local Storage/leveldb/MANIFEST-000001
+2024/07/11-11:49:21.970 6 Level-0 table #5: started
+2024/07/11-11:49:21.981 6 Level-0 table #5: 122891 bytes OK
+2024/07/11-11:49:21.986 6 Delete type=0 #3
