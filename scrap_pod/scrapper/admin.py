@@ -1,5 +1,10 @@
 from django.contrib import admin
 from django.apps import apps
+from .models import Categories, Store, SubCategories, Product
+
+class CategoriesAdmin(admin.ModelAdmin):
+    list_display = ('name', 'store')
+admin.site.register(Categories, CategoriesAdmin)
 
 # Get the app config for the 'scrapper' app
 app_config = apps.get_app_config('scrapper')
