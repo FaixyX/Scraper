@@ -4,7 +4,7 @@ from django.db import models
 # Modal for store
 class Store(models.Model):
     name = models.CharField( max_length=255 )
-    url = models.URLField( blank=True, null=True )
+    # url = models.URLField( blank=True, null=True )
 
     def __str__(self):
         return self.name
@@ -15,7 +15,7 @@ class Categories(models.Model):
     store = models.ForeignKey( Store, on_delete=models.CASCADE, null=True, blank=True )
 
     def __str__(self):
-        return f"{self.name} of {self.category} in {self.store}"
+        return f"{self.name} in {self.store}"
 
 # Modal for categories
 class SubCategories(models.Model):
@@ -25,7 +25,7 @@ class SubCategories(models.Model):
     url = models.URLField( blank=True, null=True )
 
     def __str__(self):
-        return f"{self.name} of {self.category} in {self.store}"
+        return f"{self.name} of {self.category}"
     
 # Modal for LiveGames
 class Product(models.Model):
