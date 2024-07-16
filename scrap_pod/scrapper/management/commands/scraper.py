@@ -17,6 +17,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 
 def scrape_category(url, store):
+    products = []
     # Write code to extract the data.
     # We have four different store, so we will write scraper logic for each store
     # If store == 'Telemart'
@@ -29,7 +30,7 @@ def scrape_category(url, store):
     #   title = this this this
     #   url = this this this
     #   price = this this this
-    products = []
+    
     return products
 
 class Command(BaseCommand):
